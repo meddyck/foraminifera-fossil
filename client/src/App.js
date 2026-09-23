@@ -2,11 +2,11 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Predict from "./pages/Predict";
 import About from "./pages/About";
 import Geology from "./pages/Geology";
 import Fossils from "./pages/Fossils";
 import Contact from "./pages/Contact";
+import Vlm from "./pages/Vlm";
 
 import "./styles/global.css";
 
@@ -19,8 +19,8 @@ function App() {
         <div style={{ flex: 1, paddingBottom: "20px" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/predict" element={<Predict />} />
             <Route path="/tani" element={<Fossils />} />
+            <Route path="/vlm" element={<Vlm />} />
             <Route path="/hakkinda" element={<About />} />
             <Route path="/jeoloji" element={<Geology />} />
             <Route path="/iletisim" element={<Contact />} />
