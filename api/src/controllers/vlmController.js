@@ -95,6 +95,7 @@ async function callGemini({ prompt, mimeType, data }) {
           ]
         }
       ],
+      max_tokens: 1000,
       temperature: 0.2
     };
   } else {

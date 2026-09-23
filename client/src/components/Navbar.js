@@ -42,7 +42,8 @@ function Navbar() {
         </button>
 
         {/* NAVIGATION LINKS */}
-        <nav className={`navbar-menu ${isMenuOpen ? "navbar-menu-open" : ""}`} style={{ display: 'flex', gap: '28px', alignItems: 'center', zIndex: 1000 }}>
+        {/* -jr No inline display: the mobile CSS toggles .navbar-menu with display:none and .navbar-menu-open with display:flex */}
+        <nav className={`navbar-menu ${isMenuOpen ? "navbar-menu-open" : ""}`} style={{ zIndex: 1000 }}>
           <Link 
             to="/" 
             onClick={handleLinkClick} 
